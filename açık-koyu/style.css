@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reddit Mono", monospace;
+}
+:root{
+    --nav-bg: #d4d8f1;
+    --nav-color : #233;
+    --section-bg: #fff;
+    --info-bg: #faf;
+    --info-color: #333;
+}
+.dark-theme{
+    --nav-bg: #0d1a3d;
+    --nav-color: #ddf;
+    --section-bg: #000;
+    --info-bg: #818;
+    --info-color: #ddd;
+}
+html,
+body{
+    font-size: 10px;
+    transition: all 1s ease-in-out;
+}
+.header{
+    background-color: var(--nav-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    height: 6rem;
+}
+.header h1{
+    color: var(--nav-color);
+    letter-spacing: 1px;
+}
+.header button{
+    color: var(--nav-color);
+    background-color: var(--nav-bg);
+    border: 0;
+    border: 2px solid var(--nav-color);
+    padding: 5px 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 6rem;
+}
+.section{
+    background-color: var(--section-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 6rem);
+}
+.info{
+    background-color: var(--info-bg);
+    color: var(--info-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60rem;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 25px 40px 50px rgba(0, 0, 0, 0.3);
+}
+.info h4{
+    font-size: 3rem;
+}
+.info i{
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: rgb(238, 21, 57);
+}
+.info p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+}
